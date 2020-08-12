@@ -13,6 +13,18 @@ html {
 	font-size: small;
 }
 
+a:link, a:visited, a:hover, a:focus, a:active {
+	color: #222222;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+}
+
 #Viewport {
 	width: 100vw;
 	min-height: 100vh;
@@ -24,4 +36,29 @@ html {
 #TopBar {
 	width: 100vw;
 	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	line-height: 5em;
 }
+
+#TopBar ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#TopBar ul li {
+	display: inline-block;
+}
+
+#TopBar ul li a {
+	padding: 1.2em;
+}
+
+/*************************************************************
+	Main Body
+*************************************************************/
+
