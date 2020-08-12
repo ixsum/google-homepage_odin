@@ -1,11 +1,27 @@
-/*  */
+/*************************************************************
+	Main Styles
+*************************************************************/
 * {
 	margin: 0;
 	box-sizing: border-box;
 }
 
+html {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
 
 #Viewport {
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
+}
+
+/*************************************************************
+	Navigation
+*************************************************************/
+#TopBar {
+	width: 100vw;
+	display: flex;
 }
