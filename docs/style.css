@@ -9,12 +9,15 @@
 html {
 	background-color: #FFFFFF;
 	color: #000000;
+	/* background-color: #222222;
+	color: #DDDDDD; */
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: small;
 }
 
 a:link, a:visited, a:hover, a:focus, a:active {
 	color: #222222;
+	/* color: #DDDDDD; */
 }
 
 a:link, a:visited {
@@ -61,4 +64,27 @@ a:hover, a:focus, a:active {
 /*************************************************************
 	Main Body
 *************************************************************/
+#ContentContainer {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	min-height: 35vh;
+}
 
+#ImageLogo {
+}
+
+#SearchContainer {
+	max-width: 60vw;
+	border: 1px solid #DDDDDD;
+	border-radius: 15px;
+}
+
+#SearchBar {
+	background-color: transparent;
+	padding: 0;
+	width: 100%;
+	border: 0 solid #000000;
+}
