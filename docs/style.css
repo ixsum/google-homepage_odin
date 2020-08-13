@@ -4,6 +4,8 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
+	transition: 0.2s ease;
+	outline: none;
 }
 
 html {
@@ -35,7 +37,7 @@ ul li {
 }
 
 ul li a {
-	padding: 1.2em;
+	padding: 0.7em 1.2em;
 }
 
 #Viewport {
@@ -51,7 +53,7 @@ ul li a {
 /*************************************************************
 	Navigation
 *************************************************************/
-#TopBar {
+#TopBar, #BottomBar {
 	width: 100vw;
 	display: flex;
 	flex-flow: row nowrap;
@@ -60,7 +62,14 @@ ul li a {
 	align-content: center;
 	padding-left: 1vw;
 	padding-right: 1vw;
-	line-height: 5em;
+	line-height: 3.5em;
+}
+
+#BottomBar {
+	background-color: #EEEEEE;
+	border: 1px solid #DDDDDD;
+	bottom: 0;
+	position: fixed;
 }
 
 /*************************************************************
