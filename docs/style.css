@@ -9,15 +9,12 @@
 html {
 	background-color: #FFFFFF;
 	color: #000000;
-	/* background-color: #222222;
-	color: #DDDDDD; */
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: small;
 }
 
 a:link, a:visited, a:hover, a:focus, a:active {
 	color: #222222;
-	/* color: #DDDDDD; */
 }
 
 a:link, a:visited {
@@ -32,6 +29,11 @@ a:hover, a:focus, a:active {
 	width: 100vw;
 	min-height: 100vh;
 }
+
+/*************************************************************
+	Dark Mode, temporary for development
+*************************************************************/
+/*html, a:link, a:visited { background-color: #222222; color: #DDDDDD; }*/
 
 /*************************************************************
 	Navigation
@@ -73,8 +75,7 @@ a:hover, a:focus, a:active {
 	min-height: 35vh;
 }
 
-#ImageLogo {
-}
+/*#ImageLogo {}*/
 
 #SearchContainer {
 	max-width: 60vw;
