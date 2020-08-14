@@ -6,13 +6,13 @@
 	box-sizing: border-box;
 	transition: 0.2s ease;
 	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
 }
 
 html {
 	background-color: #FFFFFF;
 	color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: small;
 }
 
 a:link, a:visited, a:hover, a:focus, a:active {
@@ -37,7 +37,7 @@ ul li {
 }
 
 ul li a {
-	padding: 0.7em 1.2em;
+	padding: 0.7em 0.5em;
 }
 
 #Viewport {
@@ -51,7 +51,7 @@ ul li a {
 /*html, a:link, a:visited { background-color: #222222; color: #DDDDDD; }*/
 
 /*************************************************************
-	Navigation
+	Main Menu Navigation
 *************************************************************/
 #TopBar, #BottomBar {
 	width: 100vw;
@@ -62,6 +62,7 @@ ul li a {
 	align-content: center;
 	padding-left: 1vw;
 	padding-right: 1vw;
+	padding-top: 0.6vw;
 	line-height: 3.5em;
 }
 
@@ -70,6 +71,34 @@ ul li a {
 	border: 1px solid #DDDDDD;
 	bottom: 0;
 	position: fixed;
+}
+
+#BottomBar a {
+	color: #595959;
+}
+
+/*************************************************************
+	Sub Menu Navigation
+*************************************************************/
+.nav-item-has-children .sub-nav {
+	display: none;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	position: absolute;
+	right: 5vw;
+
+	padding: 0;
+	width: 30vh;
+	height: 35vh;
+	background: #FFFFFF;
+	box-shadow: 0 10px 14px rgba(0,0,0,0.4);
+}
+.nav-item-has-children:hover  > .sub-nav,
+.nav-item-has-children:focus  > .sub-nav,
+.nav-item-has-children:active > .sub-nav {
+	/* This needs to be a checkbox */
+	/* Checkbox unticks when focus goes anywhere else */
+	display: flex;
 }
 
 /*************************************************************
@@ -110,12 +139,29 @@ ul li a {
 	padding: 0;
 	width: 100%;
 	border: 0 solid #000000;
-	width: 40vw;
+	width: 26vw;
+	font-size: 1.2em;
+	padding-top: 3px;
 }
 
 /*************************************************************
 	Action Buttons
 *************************************************************/
+.button {
+	font-size: small;
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+}
+
+#SignIn {
+	background-color: #4486F8;
+	color: #FFFFFF;
+	border: 1px solid #4486F8;
+	border-radius: 2px;
+	font-weight: bolder;
+	padding: 0.7 inherit;
+}
+
 #ActionButtons {
 	display: flex;
 	flex-flow: row nowrap;
@@ -134,10 +180,9 @@ ul li a {
 
 #ActionButtons ul li a {
 	background-color: #EEEEEE;
-	color: #777777;
-	font-size: small;
-	border-radius: 5px;
+	color: #595959;
 	border: 1px solid #EEEEEE;
+	border-radius: 5px;
 }
 
 #ActionButtons ul li a:hover, #ActionButtons ul li a:focus, #ActionButtons ul li a:active {
@@ -146,3 +191,4 @@ ul li a {
 	border: 1px solid #DDDDDD;
 	text-decoration: none;
 }
+
